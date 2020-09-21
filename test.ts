@@ -3,27 +3,26 @@ import { clone } from "./mod.ts";
 
 Deno.test("it should be able to clone surface properties", () => {
   const objA = {
-    foo: 1,
+    foo: 'foo',
   };
 
   const objB = clone(objA);
 
-  objB.foo = 2;
+  objB.foo = 'bar';
 
-  assertEquals(objA.foo, 1);
+  assertEquals(objA.foo, 'foo');
 });
 
 Deno.test("it should be able to clone deep properties", () => {
   const objA = {
-    bar: 2,
     foo: {
-      bar: 1,
+      bar: 'bar',
     },
   };
 
   const objB = clone(objA);
 
-  objB.foo.bar = 3;
+  objB.foo.bar = 'foo';
 
-  assertEquals(objA.foo.bar, 1);
+  assertEquals(objA.foo.bar, 'bar');
 });

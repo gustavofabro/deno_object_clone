@@ -1,7 +1,7 @@
 // deno-lint-ignore-file
 
 export function clone(object: any) {
-  let cloneObj = {} as any;
+  const cloneObj = {} as any;
 
   for (const attr in object) {
     if (typeof object[attr] == "object") {
