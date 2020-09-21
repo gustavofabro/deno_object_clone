@@ -1,4 +1,4 @@
-import { assertEquals } from "https://deno.land/std/testing/asserts.ts";
+import { assertEquals } from "./test_deps.ts";
 import { clone } from "./mod.ts";
 
 Deno.test("it should be able to clone surface properties", () => {
