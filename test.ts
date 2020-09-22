@@ -33,13 +33,12 @@ Deno.test("it should be able to clone deep properties", () => {
   assertEquals(objA.foo.barFn(), "bar");
 });
 
-
 Deno.test("it should be able to return the value sent when it is not an object", () => {
-  const objA = clone('bar');
+  const objA = clone("bar");
   const objB = clone(null);
   const objC = clone(undefined);
 
-  assertEquals(objA, 'bar');
+  assertEquals(objA, "bar");
   assertStrictEquals(objB, null);
   assertStrictEquals(objC, undefined);
 });
