@@ -35,5 +35,8 @@ jobs:
       - name: Cache Dependencies
         run: deno cache deps.ts
 
+      - name: Check format
+        run: deno fmt --check
+
       - name: Run Tests
         run: deno test -A --unstable
