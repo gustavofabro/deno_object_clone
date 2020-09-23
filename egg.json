@@ -1,0 +1,10 @@
+{
+  "name": "object-clone",
+  "version": "1.0.0",
+  "description": "Module for deep object clone",
+  "stable": true,
+  "repository": "https://github.com/gustavofabro/deno_object_clone",
+  "entry": "/mod.ts",
+  "checkAll": true,
+  "unlisted": false
+}
