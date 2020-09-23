@@ -1,4 +1,4 @@
-<h1 align="center">🦕 Clone</h1>
+<h1 align="center">🦕 Object clone</h1>
 
 <p align="center">
   Deno module for deep object clone
