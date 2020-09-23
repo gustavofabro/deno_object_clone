@@ -12,7 +12,7 @@
 
 
 Clone is available through:
-
+- https://deno.land/x/object_clone@1.0.0
 
 ## Usage
 
