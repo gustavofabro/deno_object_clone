@@ -17,7 +17,7 @@ Clone is available through:
 ## Usage
 
 ```typescript
-import { clone } from "";
+import { clone } from "https://deno.land/x/object_clone@1.0.0/mod.ts";
 
 const objA = {
   foo: {
