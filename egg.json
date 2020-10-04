@@ -1,6 +1,6 @@
 {
   "name": "object-clone",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Module for deep object clone",
   "stable": true,
   "repository": "https://github.com/gustavofabro/deno_object_clone",

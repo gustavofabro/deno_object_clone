@@ -13,14 +13,14 @@
 </p>
 
 
-Clone is available through:
-- https://deno.land/x/object_clone@1.0.1
-- https://x.nest.land/object-clone@1.0.1
+Object clone is available through:
+- https://deno.land/x/object_clone
+- https://nest.land/package/object-clone
 
 ## Usage
 
 ```typescript
-import { clone } from "https://deno.land/x/object_clone@1.0.1/mod.ts";
+import { clone } from "https://deno.land/x/object_clone@1.0.3/mod.ts";
 
 const objA = {
   foo: {
