@@ -1,4 +1,4 @@
-import { assertEquals, assertStrictEquals } from "./test_deps.ts";
+import { assert, assertEquals, assertStrictEquals } from "./test_deps.ts";
 import { clone } from "./mod.ts";
 
 Deno.test("it should be able to clone surface properties", () => {
@@ -31,6 +31,26 @@ Deno.test("it should be able to clone deep properties", () => {
 
   assertEquals(objA.foo.bar, "bar");
   assertEquals(objA.foo.barFn(), "bar");
+});
+
+Deno.test("it should be able to clone array", () => {
+  const arrayA = [1, 2, 3];
+
+  const arrayB = clone(arrayA);
+
+  arrayB.push(4);
+
+  assert(!arrayA.includes(4));
+});
+
+Deno.test("it should be able to clone deep array", () => {
+  const arrayA = [[1, 2]];
+
+  const arrayB = clone(arrayA);
+
+  arrayB[0].push(3);
+
+  assert(!arrayA[0].includes(3));
 });
 
 Deno.test("it should be able to return the value sent when it is not an object", () => {
