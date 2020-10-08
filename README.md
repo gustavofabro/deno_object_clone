@@ -20,7 +20,7 @@ Object clone is available through:
 ## Usage
 
 ```typescript
-import { clone } from "https://deno.land/x/object_clone@1.0.3/mod.ts";
+import { clone } from "https://deno.land/x/object_clone@1.1.0/mod.ts";
 
 const objA = {
   foo: {
